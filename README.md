@@ -1,4 +1,4 @@
-# Codeforces Problem and Solution :thinking:
+# Codeforces Problems and Solution :thinking:
 👋 Welcome to the Codeforces Problems repository! In this repository, you will find a collection of codeforces problems and solutions to help you improve your JavaScript skills. Whether you're a beginner looking to learn the basics or an experienced developer aiming to hone your skills, you'll find problems suited to your level.
 
 > Note: This repository contains `my solution` to a `--Codeforces problem` implemented.
