@@ -5,11 +5,11 @@ Designed for **frontend & backend developers** to **practice real-world coding p
 
 ## Tech Stack
 
-- **React.js** (Frontend Web Development)
-- **React Native** (Mobile App Development)
-- **Angular** (Frontend Web Development)
-- **Golang** (Backend API Development)
-- **Node.js** (Backend with JavaScript)
+- **React.js**
+- **React Native**
+- **Angular**
+- **Golang**
+- **Node.js**
 
 ## How to Run the Projects
 
@@ -17,3 +17,4 @@ Clone the repository:
 ```bash
 git clone https://github.com/abhishekkushwahaa/Machine-Coding-Interview.git
 cd Machine-Coding-Interview
+```
