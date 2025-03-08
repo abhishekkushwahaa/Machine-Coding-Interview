@@ -11,7 +11,7 @@ Designed for **frontend & backend developers** to **practice real-world coding p
 - **Golang** (Backend API Development)
 - **Node.js** (Backend with JavaScript)
 
-## 🚀 How to Run the Projects
+## How to Run the Projects
 
 Clone the repository:
 ```bash
