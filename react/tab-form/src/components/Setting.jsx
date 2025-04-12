@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Setting = ({ data, setData }) => {
+const Setting = ({ data, setData, errors }) => {
   const { theme } = data
 
   const handleDataChange = (e) => {
@@ -18,6 +18,7 @@ const Setting = ({ data, setData }) => {
         <input type='radio' name="Light" checked={theme === "Light"} onChange={handleDataChange} />
         Light
       </label>
+      {errors.theme && <span className='error'>{errors.theme}</span>}
     </div>
   </div>;
 };

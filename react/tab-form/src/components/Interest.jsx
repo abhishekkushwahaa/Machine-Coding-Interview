@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Interest = ({ data, setData }) => {
+const Interest = ({ data, setData, errors }) => {
   const { interest } = data
 
   const handleDataChange = (e, name) => {
@@ -28,6 +28,7 @@ const Interest = ({ data, setData }) => {
         <input type='checkbox' name="Cricket" checked={interest.includes("Cricket")} onChange={handleDataChange} />
         Cricket
       </label>
+      {errors.interest && <span className='error'>{errors.interest}</span>}
     </div>
   </div>;
 };

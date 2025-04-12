@@ -28,3 +28,9 @@
 input:focus {
     outline: none;
 }
+
+.error {
+    font-size: 15px;
+    color: red;
+    display: block;
+}
