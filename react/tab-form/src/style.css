@@ -1,0 +1,30 @@
+.tab-screen {
+    padding: 10px;
+}
+
+.heading-container {
+    display: flex;
+    cursor: pointer;
+}
+
+.heading {
+    padding: 2px 20px 2px 20px;
+    font-size: 20px;
+    border: 1px solid black
+}
+
+.tab-body {
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid black;
+    height: 150px;
+    width: 285px;
+}
+
+.profile-form {
+    padding: 2px;
+}
+
+input:focus {
+    outline: none;
+}

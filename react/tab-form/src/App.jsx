@@ -1,9 +1,10 @@
+import TabForm from "./components/TabForm";
+import "./style.css"
 function App() {
   return (
     <>
-      <h1>Hello from Tab From!</h1>
+      <TabForm />
     </>
   )
 }
-
 export default App
