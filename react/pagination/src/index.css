@@ -1,3 +1,53 @@
 h1 {
     color: rebeccapurple;
 }
+
+.app {
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    display: flex;
+    width: 215px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.product-img {
+    width: 200px;
+    height: 200px;
+}
+
+.product-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.page {
+    margin: 20px;
+}
+
+.page-number {
+    padding: 10px;
+    margin: 2px;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+.page-change {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+}
+
+.active-page {
+    background-color: skyblue;
+}
