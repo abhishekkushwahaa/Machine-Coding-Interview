@@ -8,3 +8,4 @@ function shuffle(array) {
 }
 
 console.log(shuffle([2, 4, 1, 5, 0]))
+console.log(shuffle([2, 7, 18, 52, 203]))
