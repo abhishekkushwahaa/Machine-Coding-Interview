@@ -1,12 +1,5 @@
 package main
 
-type Person struct {
-	Name string
-	Tags []string
-}
-
-package main
-
 import "fmt"
 
 type Person struct {
