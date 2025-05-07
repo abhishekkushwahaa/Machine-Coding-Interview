@@ -10,6 +10,7 @@ Designed for **frontend & backend developers** to **practice real-world coding p
 - **Angular**
 - **Golang**
 - **Node.js**
+- **SQL**
 
 ## How to Run the Projects
 
