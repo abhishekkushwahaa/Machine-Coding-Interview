@@ -1,3 +1,64 @@
 body {
     background: olivedrab;
+    font-family: sans-serif;
+}
+
+.app {
+    text-align: center;
+}
+
+.inputBox {
+    width: 450px;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px;
+    border-radius: 2px;
+}
+
+.inputBox:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.results-container {
+    height: auto;
+    width: 450px;
+    margin: auto;
+    text-align: left;
+    overflow-y: scroll;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+.results {
+    display: block;
+    padding: 5px;
+}
+
+.results:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+/* Scrollbar  */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
