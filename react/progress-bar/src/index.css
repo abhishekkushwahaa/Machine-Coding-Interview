@@ -7,3 +7,19 @@ body {
     text-align: center;
     color: whitesmoke;
 }
+
+.outer {
+    border: 1px solid black;
+    text-align: center;
+    max-width: 100vh;
+    border-radius: 4px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.inner {
+    padding: 2px;
+    background-color: seagreen;
+    text-align: right;
+    transition: 0.5s ease-in;
+}
