@@ -4,5 +4,26 @@ body {
 }
 
 .container {
+    margin-top: 1.2cm;
     text-align: center;
+}
+
+.otp-container {
+    text-align: center;
+}
+
+.otp-input {
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    text-align: center;
+    margin: 2px;
+    border: 1px solid;
+    border-radius: 2px;
+}
+
+.otp-input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ccc;
 }
