@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 const checkBoxData = [
   {
@@ -60,19 +61,41 @@ const checkBoxData = [
   }
 ]
 
-const CheckBoxes = ({ data }) => {
+const CheckBoxes = ({ data, checked, setChecked }) => {
+
+  const handleChange = (isChecked, node) => {
+    setChecked(prev => {
+      const newState = { ...prev, [node.id]: isChecked }
+
+      // If Children are present and their parent checked then children must be checked!!
+      const updateChildren = (node) => {
+        node.children?.forEach((child) => {
+          newState[child.id] = isChecked;
+          child.children && updateChildren(child)
+        })
+      }
+      updateChildren(node)
+
+      return newState;
+    })
+  }
+
   return <div>
     {data.map((node) => (
       <div className="parent" key={node.id}>
-        <input className="checkbox" type="checkbox" />
+        <input className="checkbox" type="checkbox"
+          checked={checked[node.id] || false}
+          onChange={(e) => handleChange(e.target.checked, node)}
+        />
         <span>{node.name}</span>
-        {node.children && <CheckBoxes data={node.children} />}
+        {node.children && <CheckBoxes data={node.children} checked={checked} setChecked={setChecked} />}
       </div>
     ))}
   </div>
 }
 
 function App() {
+  const [checked, setChecked] = useState({})
   return (
     <>
       <div className="container">
@@ -81,7 +104,7 @@ function App() {
         </h2>
       </div>
       <div className="checkbox-container">
-        <CheckBoxes data={checkBoxData} />
+        <CheckBoxes data={checkBoxData} checked={checked} setChecked={setChecked} />
       </div>
     </>
   )
