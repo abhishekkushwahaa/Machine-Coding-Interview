@@ -6,3 +6,20 @@ body {
 .chips-container {
     text-align: center;
 }
+
+.chips-input {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.input-tag {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 2px;
+    width: 250px;
+}
+
+.input-tag:focus {
+    outline: none;
+}
