@@ -5,9 +5,9 @@ function App() {
   const [chips, setChips] = useState([]);
 
   const handleKeyDown = (e) => {
-    if (e.key == "Enter" && inputText !== "") {
+    if (e.key == "Enter" && inputText.trim() !== "") {
       // Logic to add chips/tags
-      setChips(prev => [...prev, inputText])
+      setChips(prev => [...prev, inputText.trim()])
       setInputText("");
     }
   }
