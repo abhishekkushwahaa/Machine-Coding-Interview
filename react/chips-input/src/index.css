@@ -5,6 +5,7 @@ body {
 
 .chips-container {
     text-align: center;
+    font-size: 22px;
 }
 
 .chips-input {
@@ -15,9 +16,11 @@ body {
 
 .input-tag {
     padding: 10px;
+    font-size: 20px;
     border: 1px solid;
     border-radius: 2px;
-    width: 250px;
+    width: 300px;
+    height: 30px;
 }
 
 .input-tag:focus {
@@ -27,5 +30,22 @@ body {
 .tags {
     margin-top: 10px;
     color: wheat;
-    font-size: 25px;
+    font-size: 20px;
+    background-color: green;
+    padding-left: 15px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 40px;
+    padding-right: 10px;
+}
+
+.x {
+    all: unset;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 16px;
+    background-color: transparent;
 }
