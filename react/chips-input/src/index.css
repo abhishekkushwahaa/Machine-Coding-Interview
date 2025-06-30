@@ -23,3 +23,9 @@ body {
 .input-tag:focus {
     outline: none;
 }
+
+.tags {
+    margin-top: 10px;
+    color: wheat;
+    font-size: 25px;
+}
