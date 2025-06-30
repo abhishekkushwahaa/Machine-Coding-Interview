@@ -14,6 +14,9 @@ function App() {
 
   const handleDeleteTags = (index) => {
     // Remove value on index from tags/chips array
+    const copyChips = [...chips]
+    copyChips.splice(index, 1)
+    setChips(copyChips);
   }
 
   return (
