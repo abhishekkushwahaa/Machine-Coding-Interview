@@ -7,3 +7,19 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.list-container {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-input {
+    padding: 5.1px;
+    margin-right: 2px;
+    border: 1px;
+    border-radius: 2px;
+}
+
+.todo-input:focus {
+    outline: none;
+}
