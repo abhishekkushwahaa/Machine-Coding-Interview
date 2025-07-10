@@ -8,9 +8,10 @@ function App() {
     const item = {
       id: 0,
       text: input,
-      completed: false
+      completed: true
     }
     setTodoList(prev => [...prev, item])
+    setInput("")
   }
 
   return (
@@ -26,8 +27,8 @@ function App() {
       <div className="todo-container">
         <ul>
           {todoList.map(t => <li key={t.id}>
-            <input type="checkbox" />
-            <span>{t.text}</span>
+            <input type="checkbox" checked={t.completed} />
+            <span className="strikeThrough">{t.text}</span>
             <button>Remove</button>
           </li>)}
         </ul>

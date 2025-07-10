@@ -23,3 +23,7 @@ body {
 .todo-input:focus {
     outline: none;
 }
+
+.strikeThrough {
+    text-decoration: line-through;
+}
