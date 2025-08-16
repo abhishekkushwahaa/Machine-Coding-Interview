@@ -21,8 +21,8 @@ function App() {
       <div>
         {items.map((item, index) => {
           return <div>
-            <button>{item.title}</button>
-            <div>{item.content}</div>
+            <button className="accordion-title">{item.title}</button>
+            <div className="accordion-content">{item.content}</div>
           </div>
         })}
       </div>

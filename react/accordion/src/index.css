@@ -7,3 +7,21 @@ body {
     justify-content: center;
     text-align: center;
 }
+
+.accordion-title {
+    width: 30%;
+    padding: 12px;
+    background-color: #f1f1f1;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-title:hover {
+    background-color: #e0e0e0;
+}
+
+.accordion-content {}
