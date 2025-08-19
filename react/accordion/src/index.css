@@ -24,4 +24,14 @@ body {
     background-color: #e0e0e0;
 }
 
-.accordion-content {}
+.accordion-content {
+    justify-content: center;
+    margin: auto;
+    width: 28.5%;
+    padding: 12px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
