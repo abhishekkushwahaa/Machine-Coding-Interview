@@ -18,9 +18,9 @@ function App() {
   return (
     <div className="heading-container">
       <h2>Accordion</h2>
-      <div>
+      <div className="accordion">
         {items.map((item, index) => {
-          return <div>
+          return <div className="accordion-section">
             <button className="accordion-title">{item.title}</button>
             <div className="accordion-content">{item.content}</div>
           </div>

@@ -8,6 +8,16 @@ body {
     text-align: center;
 }
 
+.accordion {
+    text-align: left;
+}
+
+.accordion-section {
+    justify-items: center;
+    margin: auto;
+    text-align: center;
+}
+
 .accordion-title {
     width: 30%;
     padding: 12px;
@@ -25,8 +35,6 @@ body {
 }
 
 .accordion-content {
-    justify-content: center;
-    margin: auto;
     width: 28.5%;
     padding: 12px;
     margin-bottom: 1px;
