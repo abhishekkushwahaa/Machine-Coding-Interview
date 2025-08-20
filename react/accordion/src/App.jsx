@@ -17,13 +17,18 @@ const items = [
 
 function App() {
   const [openIndex, setOpenIndex] = useState(null)
+
+  const handleToggle = (index) => {
+    setOpenIndex(openIndex == index ? null : index)
+  }
+
   return (
     <div className="heading-container">
       <h2>Accordion</h2>
       <div className="accordion">
         {items.map((item, index) => {
           return <div key={index} className="accordion-section">
-            <button className="accordion-title">{item.title}</button>
+            <button onClick={() => { handleToggle(index) }} className="accordion-title">{item.title}</button>
             {openIndex === index && <div className="accordion-content">{item.content}</div>}          </div>
         })}
       </div>
