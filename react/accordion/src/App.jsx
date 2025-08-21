@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const items = [
   {
@@ -28,7 +29,10 @@ function App() {
       <div className="accordion">
         {items.map((item, index) => {
           return <div key={index} className="accordion-section">
-            <button onClick={() => { handleToggle(index) }} className="accordion-title">{item.title}</button>
+            <button onClick={() => { handleToggle(index) }} className="accordion-title">
+              {item.title}
+              {openIndex === index ? <FaChevronUp className="arrow" /> : <FaChevronDown className="arrow" />}
+            </button>
             {openIndex === index && <div className="accordion-content">{item.content}</div>}          </div>
         })}
       </div>
